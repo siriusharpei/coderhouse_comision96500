@@ -8,6 +8,7 @@ body {
   background-color: #111;
   color: white;
   font-family: Arial, sans-serif;
+  padding-top: 30px;
 }
 
 .content {
@@ -16,11 +17,31 @@ body {
   padding: 0 40px;
 }
 
-/* HEADER */
+/* --- HEADER --- */
 
 .header {
   background-color: #000;
 }
+
+.navbar-nav {
+  margin: 0 auto; /* empuja el menú al centro */
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #d67b2a;
+  transition: width 0.3s;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
 
 .header .content {
   display: flex;
@@ -59,14 +80,16 @@ body {
 
 .fa-brands {
   font-size: 20px;
+  padding: 10px;
   cursor: pointer;
+  color: rgb(128, 255, 255);
 }
 
 .fa-brands:hover {
   color: tomato;
 }
 
-/* HERO */
+/* --- HERO --- */
 .hero {
   background: tomato url("../img/hero.jpg");
   background-position: center;
@@ -103,7 +126,7 @@ body {
   background-color: #333;
 }
 
-/* PRODUCTS */
+/* --- PRODUCTS --- */
 
 .products {
   background-color: #222;
@@ -165,7 +188,7 @@ body {
   border: #fff solid 1px;
 }
 
-/* CONTACT */
+/* --- CONTACT --- */
 
 .contact {
   background-color: #222;
@@ -217,9 +240,30 @@ body {
   overflow: hidden;
 }
 
-/* FOOTER */
+/* --- FOOTER --- */
 .footer {
   text-align: center;
   padding: 20px 0;
   background-color: #000;
+}
+
+
+/* --- Ajuste para pantallas pequeñas - mobile --- */
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;     /* centra verticalmente en menú colapsado */
+  }
+
+  .navbar .nav-link {
+    font-size: 1.1rem;
+    margin: 8px 0;    
+  }
+
+  .fa-brands {
+    margin-top: 15px;
+    padding: 10px;
+    justify-content: center;
+  }
+
 }

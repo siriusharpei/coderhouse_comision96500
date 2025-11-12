@@ -126,7 +126,7 @@ body {
   background-color: #333;
 }
 
-/* --- PRODUCTS --- */
+/* --- GRID DE PRODUCTOS --- */
 
 .products {
   background-color: #222;
@@ -141,23 +141,31 @@ body {
 }
 
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 40px 20px;
+  justify-items: center;
+  gap: 40px;
 }
 
 .product-card {
   background-color: #333;
-  width: 30%;
-  padding: 20px;
   border-radius: 10px;
+  padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 380px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .product-card img {
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: contain;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -165,6 +173,7 @@ body {
 
 .product-card h3 {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .product-card p {
@@ -179,13 +188,13 @@ body {
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
-  border: tomato solid 1px;
+  border: none;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 .product-card .btn:hover {
-  background-color: #555;
-  border: #fff solid 1px;
+  background-color: #d67b2a;
 }
 
 /* --- CONTACT --- */

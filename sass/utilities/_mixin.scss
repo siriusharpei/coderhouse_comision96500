@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($prop) {
+  transition: $prop 0.3s ease;
+}
+
+@mixin card-style {
+  background-color: $color-bg-card;
+  border-radius: $radius;
+  padding: $space-md;
+  box-shadow: $shadow;
+}
+
+@mixin responsive-img($h) {
+  width: 100%;
+  height: $h;
+  object-fit: cover;
+  border-radius: 8px;
+}

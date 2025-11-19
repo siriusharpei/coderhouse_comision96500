@@ -1,0 +1,64 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+.header {
+  background-color: $color-bg-dark;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar {
+
+  .nav-link {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $color-primary-hover;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .navbar-social {
+
+    i {
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      color: rgb(128, 255, 255);
+      @include transition(color);
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+
+  .navbar-social i {
+    margin-top: 15px;
+  }
+}

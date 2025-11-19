@@ -1,0 +1,18 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- BUTTONS --- */
+
+.btn-custom {
+  background-color: $color-primary;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}

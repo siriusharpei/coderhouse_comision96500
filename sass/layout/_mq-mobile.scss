@@ -1,0 +1,35 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- Ajuste para pantallas pequeñas - mobile --- */
+
+@media (max-width: 576px) {
+  
+  .hero {
+    padding: 120px 0;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .product-grid {
+    gap: 20px;
+  }
+
+  .navbar-social {
+    i {
+      font-size: 18px;
+    }
+  }
+
+  .contact {
+    padding: 40px 0;
+  }
+}

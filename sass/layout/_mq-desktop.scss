@@ -1,0 +1,21 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- Ajuste para pantallas grandes - desktop --- */
+
+@media (min-width: 1200px) {
+  
+  .hero {
+    padding: 260px 0;
+  }
+
+  .products .title {
+    font-size: 42px;
+  }
+
+  .product-card {
+    max-width: 420px;
+  }
+}

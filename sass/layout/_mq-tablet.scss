@@ -1,0 +1,23 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+
+/* --- Ajuste para pantallas medianas - tablet --- */
+@media (max-width: 768px) {
+
+  .hero {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .product-card {
+    max-width: 320px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+}

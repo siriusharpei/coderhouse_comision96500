@@ -1,0 +1,39 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- HERO --- */
+.hero {
+  background: $color-primary url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    background-color: $color-bg-dark;
+    color: $color-text-light;
+    padding: 12px 24px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}

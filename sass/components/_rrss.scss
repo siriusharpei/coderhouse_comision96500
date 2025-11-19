@@ -1,0 +1,22 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- RRSSS --- */
+
+.navbar-social {
+  @include flex-center;
+  gap: 15px;
+
+  i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(128, 255, 255);
+    @include transition(color);
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- FOOTER --- */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $color-bg-dark;
+
+  p {
+    margin: 0;
+  }
+}

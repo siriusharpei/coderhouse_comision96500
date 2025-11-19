@@ -1,0 +1,10 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+/* --- GRID --- */
+.grid-center {
+  display: grid;
+  place-items: center;
+}

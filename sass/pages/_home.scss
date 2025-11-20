@@ -9,7 +9,11 @@
   background: tomato url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
 
   .content {
     text-align: center;

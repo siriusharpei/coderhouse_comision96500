@@ -1,0 +1,30 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+@use "../components/buttons" as *;
+
+/* --- NOSOTROS --- */
+.why-us {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+
+  h2{
+    color: black;
+    padding-bottom: 30px;
+  }
+
+  i {
+    color: $color-primary;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    color: #666;
+  }
+
+  h6{
+    color: $color-primary;
+  }
+}

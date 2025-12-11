@@ -4,11 +4,32 @@
 @use "../utilities/mixin" as *;
 
 /* --- HERO --- */
-.hero {
+.hero-section {
   background: $color-primary url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  background-repeat: no-repeat;
+  
+  min-height: 60vh;
+  padding: 120px 0; 
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+  }
 
   .content {
     text-align: center;
@@ -21,11 +42,10 @@
 
   p {
     font-size: 20px;
-    margin-bottom: 30px;
   }
 
   .btn {
-    background-color: $color-bg-dark;
+    background-color: $color-primary;
     color: $color-text-light;
     padding: 12px 24px;
     border: 1px solid #666;
@@ -33,7 +53,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: #333;
+      background-color: $color-primary-hover;
     }
   }
 }

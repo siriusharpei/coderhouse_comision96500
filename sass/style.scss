@@ -8,6 +8,10 @@
 @use "components/navbar" as *;
 @use "components/overlay" as *;
 @use "components/rrss" as *;
+@use "components/categories";
+@use "components/promo";
+@use "components/featured";
+@use "components/why-us";
 
 // LAYOUT
 @use "layout/footer" as *;

@@ -7,15 +7,17 @@
 
 @media (max-width: 576px) {
   
-  .hero {
+  .hero-section {
     padding: 120px 0;
 
     h1 {
       font-size: 32px;
+      margin: 20px;
     }
 
     p {
       font-size: 16px;
+      margin: 20px;
     }
   }
 
@@ -32,4 +34,25 @@
   .contact {
     padding: 40px 0;
   }
+
+  .featured-products {
+    text-align: center;
+
+    .row {
+      justify-content: center !important;
+    }
+
+    .card {
+      margin: 0 auto;
+      width: 85%; // más pequeño y centrado
+    }
+
+    .card img {
+      width: 70%;  // reduce el tamaño de la imagen
+      margin: 0 auto;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+
 }

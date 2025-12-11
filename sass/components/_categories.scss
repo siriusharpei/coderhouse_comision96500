@@ -1,0 +1,36 @@
+//VARIABLES
+@use "../utilities/variables" as *;
+//MIXIN 
+@use "../utilities/mixin" as *;
+
+@use "../components/buttons" as *;
+
+/* --- CATEGORIES --- */
+.categories-section {
+  padding: 4rem 0;
+  @include section-padding;
+
+  .category-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    i {
+      color: $color-primary;
+    }
+
+    h5{
+      color: black;
+    }
+
+    p{
+      color:black;
+    }
+  }
+}

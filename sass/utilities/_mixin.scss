@@ -24,3 +24,16 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+@mixin section-padding {
+  padding: 4rem 0;
+}
+
+@mixin card-hover {
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-soft;
+  }
+}
